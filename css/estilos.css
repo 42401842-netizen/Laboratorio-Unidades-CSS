@@ -67,3 +67,59 @@ html {
 .caja-vw { 
     width: 50vw; 
 }
+
+/* Parte I - Reto independiente */
+
+.panel-cursos {
+    width: 90vw;
+    min-height: 40vh;
+    margin: 2rem;
+    padding: 1.5rem;
+    border: 2px solid black;
+}
+
+.panel-encabezado {
+    width: 100%;
+    text-align: center;
+}
+
+.panel-encabezado h2 {
+    font-size: 2rem;
+}
+
+.cursos-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.tarjeta-curso {
+    width: 90%;
+    padding: 1rem;
+    border: 2px solid black;
+}
+
+.tarjeta-curso h3 {
+    font-size: 1.5rem;
+}
+
+.panel-footer {
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Pantalla pequeña
+   @media aplica estas reglas cuando la pantalla mide 600px o menos */
+@media (max-width: 600px) {
+
+    /* Ajusta el ancho del panel */
+    .panel-cursos {
+        width: 85vw;
+    }
+
+    /* Coloca las tarjetas en una sola columna */
+    .cursos-grid {
+        grid-template-columns: 1fr;
+    }
+}
